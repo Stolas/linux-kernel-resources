@@ -55,7 +55,7 @@ I've added a script into this dir called `install_ksyms.sh` which will automate 
 
 **Finally** don't forget to turn off KASLR on your *guest*! The amount of times I've forgotten this ... 
   * Add `nokaslr` to your boot options, typically via grub menu at boot 
-    * grub menu can be reached by hold shift at boot, then on your kernel selection pressing `e` will allow you to edit params (these changes don't persist), and you'll want to add it to the line with other booth options like `nosplash`
+    * grub menu can be reached by hold shift at boot, then on your kernel selection pressing `e` will allow you to edit params (these changes don't persist), and you'll want to add it to the line with other boot options like `nosplash`
   * or by editing `/etc/default/grub` and including `nokaslr` in `GRUB_CMDLINE_LINUX_DEFAULT`
 
 #### Loadable Modules
